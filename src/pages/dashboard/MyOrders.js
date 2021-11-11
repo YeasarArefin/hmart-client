@@ -13,7 +13,7 @@ const MyOrders = () => {
 
     const loadData = async () => {
 
-        const res = await fetch('http://localhost:5000/orders');
+        const res = await fetch('https://boiling-mesa-63450.herokuapp.com/orders');
         const data = await res.json();
         setLaptops(data);
 
@@ -42,7 +42,7 @@ const MyOrders = () => {
                     'success'
                 );
 
-                fetch(`http://localhost:5000/orders/${_id}`, {
+                fetch(`https://boiling-mesa-63450.herokuapp.com/orders/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

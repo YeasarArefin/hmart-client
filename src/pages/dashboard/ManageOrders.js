@@ -8,7 +8,7 @@ const ManageOrders = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/orders')
+        fetch('https://boiling-mesa-63450.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setLaptops(data))
             .catch((err) => {
@@ -31,7 +31,7 @@ const ManageOrders = () => {
 
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/orders/${_id}`, {
+                fetch(`https://boiling-mesa-63450.herokuapp.com/orders/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
@@ -79,7 +79,7 @@ const ManageOrders = () => {
                     'success'
                 );
 
-                fetch(`http://localhost:5000/orders/${_id}`, {
+                fetch(`https://boiling-mesa-63450.herokuapp.com/orders/${_id}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

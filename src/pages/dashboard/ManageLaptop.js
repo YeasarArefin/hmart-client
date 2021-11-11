@@ -8,7 +8,7 @@ const ManageLaptops = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/laptops`)
+        fetch(`https://boiling-mesa-63450.herokuapp.com/laptops`)
             .then(res => res.json())
             .then(data => setLaptops(data))
             .catch((err) => {
@@ -36,7 +36,7 @@ const ManageLaptops = () => {
                     'success'
                 );
 
-                fetch(`http://localhost:5000/laptops/${_id}`, {
+                fetch(`https://boiling-mesa-63450.herokuapp.com/laptops/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

@@ -9,7 +9,7 @@ const Products = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/laptops')
+        fetch('https://boiling-mesa-63450.herokuapp.com/laptops')
             .then(res => res.json())
             .then(data => setLaptops(data));
 

@@ -19,7 +19,7 @@ const Purchase = () => {
         const newData = { data, laptop: laptop };
         newData.status = { type: "pending" };
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://boiling-mesa-63450.herokuapp.com/orders', {
 
             method: 'POST',
             headers: {
@@ -50,7 +50,7 @@ const Purchase = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/laptops/${_id}`)
+        fetch(`https://boiling-mesa-63450.herokuapp.com/laptops/${_id}`)
             .then(res => res.json())
             .then(data => setLaptop(data))
             .catch((err) => {

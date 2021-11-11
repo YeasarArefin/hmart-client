@@ -11,7 +11,7 @@ const MakeAdmin = () => {
         const email = emailRef.current.value;
         const user = { email };
 
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://boiling-mesa-63450.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

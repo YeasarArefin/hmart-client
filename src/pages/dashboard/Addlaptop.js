@@ -7,7 +7,7 @@ const Addlaptop = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/laptops', {
+        fetch('https://boiling-mesa-63450.herokuapp.com/laptops', {
 
             method: "POST",
             headers: {

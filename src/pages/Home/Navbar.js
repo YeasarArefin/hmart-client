@@ -11,8 +11,6 @@ const Navbar = () => {
     const menu = [
         { id: 1, text: 'Home', to: '/home' },
         { id: 1, text: 'Explore', to: '/explore' },
-        { id: 3, text: 'Singin', to: '/singin' },
-        { id: 2, text: 'Singup', to: '/singup' },
         { id: 4, text: 'Dashboard', to: '/dashboard' },
     ];
 

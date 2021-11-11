@@ -14,7 +14,7 @@ const AddReview = () => {
         data['rating'] = rating;
         data['image'] = user.photoURL;
         data['email'] = user.email;
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://boiling-mesa-63450.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
